@@ -27,7 +27,7 @@ export default function Home() {
         {/* <img className='absolute inset-0  h-screen w-screen' src="/RocketOnly.png" /> */}
         <img className={yes ? ` ${styles.timefire} absolute transition-transform -translate-y-full ease-out lg:w-screen md:w-screen absolute z-10 inset-0  w-screen  h-screen ` : " "} src="/Fire.png" />
         <img className={yes ? ` ${styles.time} transition-transform -translate-y-full ease-out lg:w-screen md:w-screen absolute inset-0 z-20 w-screen  h-screen ` : "lg:w-screen md:w-screen absolute inset-0 z-20 w-screen  h-screen "} src="/RocketOnly.png" />
-
+        <img className={yes ? `  animate-fade  lg:w-screen md:w-screen absolute inset-0 z-20 w-screen  h-screen ` : ""} src="/Smoke.png" />
         {/* <div className='grid content-center'> */}
 
 
