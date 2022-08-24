@@ -19,16 +19,18 @@ export default function Home() {
 
 
       <div className=' '>
-
+        <button onClick={onClick} className=" relative z-40 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+          Launch
+        </button>
         <img className='absolute  w-screen  h-screen' src="/Backgroundlayer.png" />
         <img className='absolute inset-0  w-screen  h-screen' src="/Buildingtowerandalll.png" />
         {/* <img className='absolute inset-0  h-screen w-screen' src="/RocketOnly.png" /> */}
-        <img className={yes ? ` ${styles.time} transition-transform -translate-y-full ease-out` : "lg:w-screen md:w-screen absolute inset-0  w-screen  h-screen "} src="/RocketOnly.png" />
+        <img className={yes ? ` ${styles.timefire} absolute transition-transform -translate-y-full ease-out lg:w-screen md:w-screen absolute z-10 inset-0  w-screen  h-screen ` : " "} src="/Fire.png" />
+        <img className={yes ? ` ${styles.time} transition-transform -translate-y-full ease-out lg:w-screen md:w-screen absolute inset-0 z-20 w-screen  h-screen ` : "lg:w-screen md:w-screen absolute inset-0 z-20 w-screen  h-screen "} src="/RocketOnly.png" />
+
         {/* <div className='grid content-center'> */}
 
-        <button onClick={onClick} className=" relative z-40">
-          Launch
-        </button>
+
 
         {/* </div> */}
       </div>
